@@ -1,4 +1,5 @@
 //EXERCISE 3 FIZZBUZZ
+//If number is divisble by 3 then Fizz, by 5 then Buzz, by both then FizzBuzz, if not then return number.
 
 // const output = fizzBuzz(16);
 // console.log(output);
@@ -20,6 +21,7 @@
 
 
 //EXERCISE 4 DEMERIT POINTS
+//Okay if speed is below 75, 1 point for every 5 over the speed limit, license suspended at 12 points.
 
 // checkSpeed(129);
 
@@ -42,6 +44,7 @@
 
 
 //EXERCISE 5 EVEN ODD NUMBERS
+//Log if input number is even or odd
 
 // showNumbers(10);
 
@@ -53,7 +56,12 @@
 //     }
 // }
 
+
+
+
 //EXERCISE 6 COUNT TRUTHY
+//Counts items in array that are "truthy"
+
 // let thisArray = [1, 2, 3, null, undefined, 0, NaN, 'word'];
 
 // function countTruthy(array) {
@@ -70,6 +78,7 @@
 
 
 //EXCERCISE 7 STRING PROPERTIES
+//logs object properties if they are strings
 
 // const movie = {
 //     title: 'Oh Brother',
@@ -90,6 +99,7 @@
 
 
 //EXERCISE 8 SUM OF MULTIPLES OF 3 AND 5
+//logs the sum of all multips of 3 and 5 up to a certain limit
 
 // sum(10);
 
@@ -108,6 +118,7 @@
 
 
 //EXERCISE 9 GRADE
+//Averages the scores from array and returns a letter grade
 
 // const scores = [70, 100, 90, 99];
 
@@ -134,6 +145,7 @@
 
 
 //EXERCISE 10 STARS
+//Logs number of stars that correspond to the row number
 
 // showStars(6);
 
@@ -150,6 +162,7 @@
 
 
 //EXERCISE 11 PRIME NUMBERS
+//Takes numbers up to a certain limit and displays them if they are prime numbers
 
 // showPrimes(100);
 
