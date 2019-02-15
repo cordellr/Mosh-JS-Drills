@@ -216,15 +216,47 @@
 // Exercise Address Object
 // Creates address object with three properties and displays it
 
-const address = {
-    street: '1111 Streetford St.',
-    city: 'Cityville',
-    zipCode: '54321'
+// const address = {
+//     street: '1111 Streetford St.',
+//     city: 'Cityville',
+//     zipCode: '54321'
+// }
+
+// function showAddress(address) {
+//     for (let key in address)
+//         console.log(key, address[key]);
+// }
+
+// showAddress(address);
+
+
+
+
+//Exercise Factory Function
+//Uses Factory function to display address object
+
+function factoryAddress(street, city, zipCode) {
+    return {
+        street,
+        city,
+        zipCode
+    }
 }
 
-function showAddress(address) {
-    for (let key in address)
-        console.log(key, address[key]);
+console.log(factoryAddress('1111 Streetford St.','Cityville','54321'));
+
+
+
+
+//Exercise Constructor function
+//Uses Constructor function to display address object
+
+function ConstructorAddress(street, city, zipCode) {
+    this.street = street;
+    this.city = city;
+    this.zipCode = zipCode;
 }
 
-showAddress(address);
+const newAddress = new ConstructorAddress('1111 Avenue Av.','Townville','12345');
+
+console.log(newAddress);
