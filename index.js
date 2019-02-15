@@ -312,17 +312,29 @@
 // console.log(blogPost);
 
 
+
+
 //Exercise to create blog post constructor function
 
-let newBlogPost = new BlogPost('This Blog','This is my blog','Cordell')
+// let newBlogPost = new BlogPost('This Blog','This is my blog','Cordell')
 
-function BlogPost(title, body, author) {
-    this.title = title;
-    this.body = body;
-    this.author = author;
-    this.views = 0;
-    this.comments = [];
-    thisisLive = false;
-}
+// function BlogPost(title, body, author) {
+//     this.title = title;
+//     this.body = body;
+//     this.author = author;
+//     this.views = 0;
+//     this.comments = [];
+//     thisisLive = false;
+// }
 
-console.log(newBlogPost);
+// console.log(newBlogPost);
+
+
+
+//Exercise to create price range objects
+
+// let priceRanges = [
+//     { label: '$', tooltip: 'Inexspensive', minPerPerson: 0, maxPerPerson: 10 },
+//     { label: '$$', tooltip: 'Moderate', minPerPerson: 11, maxPerPerson: 20 },
+//     { label: '$$$', tooltip: 'Expensive', minPerPerson: 21, maxPerPerson: 50 },
+// ];
