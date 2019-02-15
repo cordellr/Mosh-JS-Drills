@@ -180,3 +180,51 @@
 //         if (isPrime) console.log(num);
 //     }
 // }
+
+
+
+
+// Factory Function
+// function createCircle(radius) {
+//     return {
+//         radius,
+//         draw() {
+//             console.log('draw');
+//         }
+//     };
+// }
+
+// const circle1 = createCircle(1);
+
+// console.log(circle1);
+
+
+
+// // Constructor Function
+// function Circle(radius) {
+//     this.radius = radius;
+//     this.draw = function() {
+//         console.log('draw');
+//     }
+// }
+
+// //Circle.call({}, 1) same as below
+
+// const circle = new Circle(1);
+
+
+// Exercise Address Object
+// Creates address object with three properties and displays it
+
+const address = {
+    street: '1111 Streetford St.',
+    city: 'Cityville',
+    zipCode: '54321'
+}
+
+function showAddress(address) {
+    for (let key in address)
+        console.log(key, address[key]);
+}
+
+showAddress(address);
