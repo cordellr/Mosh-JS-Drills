@@ -235,15 +235,15 @@
 //Exercise Factory Function
 //Uses Factory function to display address object
 
-function factoryAddress(street, city, zipCode) {
-    return {
-        street,
-        city,
-        zipCode
-    }
-}
+// function factoryAddress(street, city, zipCode) {
+//     return {
+//         street,
+//         city,
+//         zipCode
+//     }
+// }
 
-console.log(factoryAddress('1111 Streetford St.','Cityville','54321'));
+// console.log(factoryAddress('1111 Streetford St.','Cityville','54321'));
 
 
 
@@ -251,12 +251,44 @@ console.log(factoryAddress('1111 Streetford St.','Cityville','54321'));
 //Exercise Constructor function
 //Uses Constructor function to display address object
 
-function ConstructorAddress(street, city, zipCode) {
-    this.street = street;
-    this.city = city;
-    this.zipCode = zipCode;
-}
+// function ConstructorAddress(street, city, zipCode) {
+//     this.street = street;
+//     this.city = city;
+//     this.zipCode = zipCode;
+// }
 
-const newAddress = new ConstructorAddress('1111 Avenue Av.','Townville','12345');
+// const newAddress = new ConstructorAddress('1111 Avenue Av.','Townville','12345');
 
-console.log(newAddress);
+// console.log(newAddress);
+
+
+
+
+// Exercise Object Equality
+// Checks to see if two addresses are equal (based on properties and object)
+
+// function ConstructorAddress(street, city, zipCode) {
+//     this.street = street;
+//     this.city = city;
+//     this.zipCode = zipCode;
+// }
+
+// const Address1 = new ConstructorAddress('1111 Avenue Av.','Townville','12345');
+
+// const Address2 = new ConstructorAddress('1111 Avenue Av.','Townville','12345');
+
+// function areEqual(address1, address2) {
+//     return address1.street === address2.street &&
+//     address1.city === address2.city &&
+//     address1.zipCode === address2.zipCode;
+// }
+
+// function areSame(address1, address2) {
+//     return address1 === address2;
+// }
+
+// console.log(areEqual(Address1, Address2)); //should return true because they values of parameters are equal
+// console.log(areSame(Address1, Address2)); //should return fale becuase not pointing to same object
+
+
+
