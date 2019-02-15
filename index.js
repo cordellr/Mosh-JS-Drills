@@ -292,3 +292,37 @@
 
 
 
+
+//Exercise Blog Post Object
+
+// let blogPost = {
+//     title: 'New Blog Post',
+//     body: `This is my blog post.
+//     I hope you enjoy what I have
+//     to write about. Please share
+//     your feedback.`,
+//     author: 'Cordell',
+//     views: 536,
+//     comments: [
+//         {author: 'Meagan', body: `Thank you for the post!`}
+//     ],
+//     isLive: true
+// }
+
+// console.log(blogPost);
+
+
+//Exercise to create blog post constructor function
+
+let newBlogPost = new BlogPost('This Blog','This is my blog','Cordell')
+
+function BlogPost(title, body, author) {
+    this.title = title;
+    this.body = body;
+    this.author = author;
+    this.views = 0;
+    this.comments = [];
+    thisisLive = false;
+}
+
+console.log(newBlogPost);
