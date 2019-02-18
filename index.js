@@ -338,3 +338,20 @@
 //     { label: '$$', tooltip: 'Moderate', minPerPerson: 11, maxPerPerson: 20 },
 //     { label: '$$$', tooltip: 'Expensive', minPerPerson: 21, maxPerPerson: 50 },
 // ];
+
+
+//Exercise to create an array within a given range of numbers
+
+const numbers = arrayFromRange(-12,15);
+
+console.log(numbers);
+
+function arrayFromRange(min,max) {
+    const rangeArray = [];
+
+    for (i = min; i <=max; i++) {
+        rangeArray.push(i);
+    }
+
+    return rangeArray;
+}
