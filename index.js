@@ -340,18 +340,34 @@
 // ];
 
 
+
+
+
 //Exercise to create an array within a given range of numbers
 
-const numbers = arrayFromRange(-12,15);
+// const numbers = arrayFromRange(-12,15);
 
-console.log(numbers);
+// console.log(numbers);
 
-function arrayFromRange(min,max) {
-    const rangeArray = [];
+// function arrayFromRange(min,max) {
+//     const rangeArray = [];
 
-    for (i = min; i <=max; i++) {
-        rangeArray.push(i);
-    }
+//     for (i = min; i <=max; i++) {
+//         rangeArray.push(i);
+//     }
 
-    return rangeArray;
+//     return rangeArray;
+// }
+
+
+
+//Ecercise: write a function to determine if element exists in array without using the "includes" method
+
+const numbers = [1,2,3,4];
+
+//console.log(numbers.includes(1));
+console.log(includes(numbers,2));
+
+function includes(array, searchElement) {
+    return array.indexOf(searchElement) !== -1;
 }
