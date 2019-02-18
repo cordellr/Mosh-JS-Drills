@@ -361,13 +361,28 @@
 
 
 
-//Ecercise: write a function to determine if element exists in array without using the "includes" method
+//Excercise: write a function to determine if element exists in array without using the "includes" method
 
-const numbers = [1,2,3,4];
+// const numbers = [1,2,3,4];
 
-//console.log(numbers.includes(1));
-console.log(includes(numbers,2));
+// //console.log(numbers.includes(1));
+// console.log(includes(numbers,2));
 
-function includes(array, searchElement) {
-    return array.indexOf(searchElement) !== -1;
+// function includes(array, searchElement) {
+//     return array.indexOf(searchElement) !== -1;
+// }
+
+
+//Exercise: removes values from an array based on equivalent values from another array
+
+const numbers = [1,2,3,4,5,6,1];
+
+console.log(except(numbers,[4,1]));
+
+function except(array, excluded) {
+    const output = [];
+    for (let element of array)
+        if (!excluded.includes(element))
+            output.push(element);
+    return output;
 }
