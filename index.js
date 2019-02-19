@@ -373,16 +373,42 @@
 // }
 
 
+
+
 //Exercise: removes values from an array based on equivalent values from another array
 
-const numbers = [1,2,3,4,5,6,1];
+// const numbers = [1,2,3,4,5,6,1];
 
-console.log(except(numbers,[4,1]));
+// console.log(except(numbers,[4,1]));
 
-function except(array, excluded) {
-    const output = [];
-    for (let element of array)
-        if (!excluded.includes(element))
-            output.push(element);
-    return output;
+// function except(array, excluded) {
+//     const output = [];
+//     for (let element of array)
+//         if (!excluded.includes(element))
+//             output.push(element);
+//     return output;
+// }
+
+
+
+
+//Exercise: Takes element if specified index and moves it according to specified offset
+
+const numbers = [1,2,3,4];
+
+moveBy(numbers, 1, 2); //take the array numbers, the index 1 (which is 2), and moves is two places to the right
+
+function moveBy(array, index, offset) {
+    if (index + offset >= 0 && index + offset < array.length) {
+    newArray = [...array]; //makes copy of array, to not affect original
+
+    splicedNum = newArray.splice(index,1);
+
+    newArray.splice(index + offset, 0, splicedNum[0]);
+
+    console.log(newArray); // expected output = [1, 3, 4, 2]
+    } else {
+        console.error('not a valid entry');
+    }
+
 }
