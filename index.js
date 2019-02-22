@@ -418,17 +418,35 @@
 
 //Exercise: Counts the number of occurences for given value in an array.
 
-const numbers = [1,2,2,4,1,2,1];
+// const numbers = [1,2,2,4,1,2,1];
 
-const count = countOccurences(numbers, 2)
+// const count = countOccurences(numbers, 2)
 
-console.log(count);
+// console.log(count);
 
-function countOccurences (array, searchElement) {
-    let count = 0;
-    for (let number of array) 
-        if (searchElement === number) {
-            count += 1;
+// function countOccurences (array, searchElement) {
+//     let count = 0;
+//     for (let number of array) 
+//         if (searchElement === number) {
+//             count += 1;
+//         }
+//     return count;
+// }
+
+
+
+
+const numbers = [1, 2, 6, 4, 3, 0, 25, 19];
+
+const max = getMax(numbers);
+
+console.log(max);
+
+function getMax(array) {
+    let max = 0;
+    for (let num of array)
+        if (num > max) {
+            max = num;
         }
-    return count;
+    return max;
 }
