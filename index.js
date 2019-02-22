@@ -435,18 +435,41 @@
 
 
 
+//Exercise: Finds the max number from a given array
 
-const numbers = [1, 2, 6, 4, 3, 0, 25, 19];
+// const numbers = [1, 2, 6, 4, 3, 0, 25, 19];
 
-const max = getMax(numbers);
+// const max = getMax(numbers);
 
-console.log(max);
+// console.log(max);
 
-function getMax(array) {
-    let max = 0;
-    for (let num of array)
-        if (num > max) {
-            max = num;
-        }
-    return max;
-}
+// function getMax(array) {
+//     if (array.length === 0) return undefined;
+
+//     let max = 0;
+//     for (let num of array)
+//         if (num > max) {
+//             max = num;
+//         }
+//     return max;
+// }
+
+
+
+//Excercise: displays the title of the highest rated 2018 movie in descending order
+
+const movies = [
+    { title: 'a', year: 2018, rating: 4.5 },
+    { title: 'b', year: 2018, rating: 4.7 },
+    { title: 'c', year: 2018, rating: 3 },
+    { title: 'd', year: 2017, rating: 4.5 },
+];
+
+const titles = movies
+.filter(m => m.year === 2018 && m.rating >= 4)
+.sort((a,b) => a.rating - b.rating)
+.reverse()
+.map(m => m.title)
+
+console.log(titles);
+
