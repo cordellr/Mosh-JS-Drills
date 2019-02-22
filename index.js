@@ -392,23 +392,43 @@
 
 
 
-//Exercise: Takes element if specified index and moves it according to specified offset
+//Exercise: Takes element of specified index and moves it according to specified offset
 
-const numbers = [1,2,3,4];
+// const numbers = [1,2,3,4];
 
-moveBy(numbers, 1, 2); //take the array numbers, the index 1 (which is 2), and moves is two places to the right
+// moveBy(numbers, 1, 2); //take the array numbers, the index 1 (which is 2), and moves is two places to the right
 
-function moveBy(array, index, offset) {
-    if (index + offset >= 0 && index + offset < array.length) {
-    newArray = [...array]; //makes copy of array, to not affect original
+// function moveBy(array, index, offset) {
+//     if (index + offset >= 0 && index + offset < array.length) {
+//     newArray = [...array]; //makes copy of array, to not affect original
 
-    splicedNum = newArray.splice(index,1);
+//     splicedNum = newArray.splice(index,1);
 
-    newArray.splice(index + offset, 0, splicedNum[0]);
+//     newArray.splice(index + offset, 0, splicedNum[0]);
 
-    console.log(newArray); // expected output = [1, 3, 4, 2]
-    } else {
-        console.error('not a valid entry');
-    }
+//     console.log(newArray); // expected output = [1, 3, 4, 2]
+//     } else {
+//         console.error('not a valid entry');
+//     }
 
+// }
+
+
+
+
+//Exercise: Counts the number of occurences for given value in an array.
+
+const numbers = [1,2,2,4,1,2,1];
+
+const count = countOccurences(numbers, 2)
+
+console.log(count);
+
+function countOccurences (array, searchElement) {
+    let count = 0;
+    for (let number of array) 
+        if (searchElement === number) {
+            count += 1;
+        }
+    return count;
 }
