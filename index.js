@@ -456,20 +456,35 @@
 
 
 
-//Excercise: displays the title of the highest rated 2018 movie in descending order
+// //Excercise: displays the title of the highest rated 2018 movie in descending order
 
-const movies = [
-    { title: 'a', year: 2018, rating: 4.5 },
-    { title: 'b', year: 2018, rating: 4.7 },
-    { title: 'c', year: 2018, rating: 3 },
-    { title: 'd', year: 2017, rating: 4.5 },
-];
+// const movies = [
+//     { title: 'a', year: 2018, rating: 4.5 },
+//     { title: 'b', year: 2018, rating: 4.7 },
+//     { title: 'c', year: 2018, rating: 3 },
+//     { title: 'd', year: 2017, rating: 4.5 },
+// ];
 
-const titles = movies
-.filter(m => m.year === 2018 && m.rating >= 4)
-.sort((a,b) => a.rating - b.rating)
-.reverse()
-.map(m => m.title)
+// const titles = movies
+// .filter(m => m.year === 2018 && m.rating >= 4)
+// .sort((a,b) => a.rating - b.rating)
+// .reverse()
+// .map(m => m.title)
 
-console.log(titles);
+// console.log(titles);
 
+
+
+
+//Exercise: sums any number of arguments passed, including in an array
+
+let total = sum([1, 2, 3, 4, 5]);
+
+console.log(total);
+
+function sum(...args) {
+    if(args.length === 1 && Array.isArray(args[0]))
+        args = [...args[0]]; //if an array is passed, runs spread operator so numbers can be evaluated as normal
+
+    return args.reduce((a, b) => a + b);
+}
