@@ -494,11 +494,40 @@
 
 //Exercise: create circle object with read-only property
 
-const circle = {
-    radius: 2,
-    get area() {
-        return Math.PI * this.radius * this.radius;
-    }
-};
+// const circle = {
+//     radius: 2,
+//     get area() {
+//         return Math.PI * this.radius * this.radius;
+//     }
+// };
 
-console.log(circle.area);
+// console.log(circle.area);
+
+
+
+
+//Excercise: Takes countOccurences that I made earlier, and implements try/catch and throw to display error message
+//when the argument passed to countOccurences is not an array
+
+try {
+const numbers = [1,2,2,4,1,2,1];
+
+const count = countOccurences(null, 2) // 'null' is not an array
+
+console.log(count);
+}
+catch(e) {
+    console.log(e.message); //take throw error message and displays on the console
+}
+
+function countOccurences (array, searchElement) {
+    if (!Array.isArray(array)) //checks to see if argument passed is not an array
+        throw new Error('Not an array.') //if not an array, throws error message
+
+    let count = 0;
+    for (let number of array) 
+        if (searchElement === number) {
+            count += 1;
+        }
+    return count;
+}
