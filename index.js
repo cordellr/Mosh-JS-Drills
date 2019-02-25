@@ -476,15 +476,29 @@
 
 
 
-//Exercise: sums any number of arguments passed, including in an array
+// Exercise: sums any number of arguments passed, including in an array
 
-let total = sum([1, 2, 3, 4, 5]);
+// let total = sum([1, 2, 3, 4, 5]);
 
-console.log(total);
+// console.log(total);
 
-function sum(...args) {
-    if(args.length === 1 && Array.isArray(args[0]))
-        args = [...args[0]]; //if an array is passed, runs spread operator so numbers can be evaluated as normal
+// function sum(...args) {
+//     if(args.length === 1 && Array.isArray(args[0]))
+//         args = [...args[0]]; //if an array is passed, runs spread operator so numbers can be evaluated as normal
 
-    return args.reduce((a, b) => a + b);
-}
+//     return args.reduce((a, b) => a + b);
+// }
+
+
+
+
+//Exercise: create circle object with read-only property
+
+const circle = {
+    radius: 2,
+    get area() {
+        return Math.PI * this.radius * this.radius;
+    }
+};
+
+console.log(circle.area);
